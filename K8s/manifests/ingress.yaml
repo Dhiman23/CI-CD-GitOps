@@ -10,7 +10,7 @@ spec:
   - host: go-app.local
     http:
       paths:
-      - path: /testpath
+      - path: /
         pathType: Prefix
         backend:
           service:
