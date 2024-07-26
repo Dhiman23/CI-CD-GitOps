@@ -7,7 +7,8 @@ module "eks" {
   subnet_ids      = module.vpc.private_subnets
   vpc_id          = module.vpc.vpc_id
 
-  enable_irsa = true
+enable_irsa = true
+cluster_endpoint_public_access  = true
 
   # EKS Managed Node Group(s)
   eks_managed_node_group_defaults = {
