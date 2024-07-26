@@ -9,7 +9,7 @@ RUN go mod download
 #  copying all the files/folders 
 COPY . .
 # running build command to thr application inside the container 
-RUN go nbuild -o main .
+RUN go build -o main .
 # this if the final stage to reduce size as well as increase the sercurity of the container
 FROM gcr.io/distroless/base
 # copy all the binaries from the stage base 
