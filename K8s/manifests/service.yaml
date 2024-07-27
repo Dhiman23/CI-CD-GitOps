@@ -11,6 +11,6 @@ spec:
      protocol: TCP
    selector:
     app: go-app
-   type: NodePort
+   type: LoadBalancer
 
 
